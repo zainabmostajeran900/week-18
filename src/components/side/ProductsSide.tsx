@@ -27,9 +27,9 @@ export const ProductsSide: React.FC = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-y-6 bg-appGray text-white h-[calc(100vh-86px)] rounded-md ml-2 p-2 sm:p-4 w-full sticky top-28 xs:top-20 max-h-[810px]"
+        className="flex flex-col gap-y-6 bg-appGray text-white h-[calc(100vh-86px)] rounded-md  p-4 sm:p-4 w-full sticky top-28 xs:top-20 max-h-[810px]"
       >
-        <h2 className=" text-lg sm:text-2xl pb-2 flex-shrink">
+        <h2 className="text-2xl pb-2 flex-shrink">
           Filter Products
         </h2>
         <div className="flex items-center ">
@@ -41,7 +41,7 @@ export const ProductsSide: React.FC = () => {
             id="asSort"
             checked={filters.sort === "ascending"}
           />
-          <label htmlFor="asSort" className="pl-2 text-xs sm:text-base">
+          <label htmlFor="asSort" className="pl-2 text-base">
             Ascending
           </label>
         </div>
@@ -54,7 +54,7 @@ export const ProductsSide: React.FC = () => {
             id="desSort"
             checked={filters.sort === "descending"}
           />
-          <label htmlFor="desSort" className="pl-2 text-xs sm:text-base">
+          <label htmlFor="desSort" className="pl-2 text-base">
             Descending
           </label>
         </div>
@@ -66,7 +66,7 @@ export const ProductsSide: React.FC = () => {
             id="stock"
             checked={filters.outOfStock}
           />
-          <label htmlFor="stock" className="pl-2 text-xs sm:text-base">
+          <label htmlFor="stock" className="pl-2 text-base">
             Include Out of Stock
           </label>
         </div>
@@ -78,14 +78,14 @@ export const ProductsSide: React.FC = () => {
             id="fastDel"
             checked={filters.shipsOvernight}
           />
-          <label htmlFor="fastDel" className="pl-2 text-xs sm:text-base">
+          <label htmlFor="fastDel" className="pl-2 text-base">
             Ships overnight
           </label>
         </div>
         <Rating rateChange={rateChange} rate={filters.rate} />
         <button
           onClick={clearFilters}
-          className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-300"
+          className="w-full bg-white text-black font-bold py-2 rounded-md hover:bg-gray-300"
         >
           Clear Filters
         </button>
