@@ -25,13 +25,13 @@ export const MainLayout: React.FC = () => {
         )}
 
         {pathname === "/shopping-card" && (
-          <aside className="hidden sm:block sm:w-4/12 sm:max-w-[300px]">
+          <aside className="sm:w-4/12 sm:max-w-[300px]">
             <ShoppingSlide text="Completion of Information" page="/user-info" />
           </aside>
         )}
 
         {pathname === "/user-info" && (
-          <aside className="hidden sm:block sm:w-4/12 sm:max-w-[300px]">
+          <aside className="sm:w-4/12 sm:max-w-[300px]">
             <ShoppingSlide text="Back to Card" page="/shopping-card" />
           </aside>
         )}

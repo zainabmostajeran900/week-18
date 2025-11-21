@@ -7,7 +7,7 @@ export const ShoppingSlide: React.FC<IButton> = ({ page, text }) => {
   return (
     <div
       className="
-    flex flex-col gap-y-6 bg-appGray text-white h-[calc(100vh-86px)] rounded-md ml-2 p-2 sm:p-4 w-full sticky top-20 max-h-[810px]"
+    flex flex-col gap-y-6 bg-appGray text-white h-auto rounded-md ml-2 p-2 sm:p-4 w-full sticky top-20 max-h-[810px]"
     >
       <h2 className="font-semibold text-lg sm:text-xl">
         Total {cardList.list.reduce((acc, item) => (acc += item.qty), 0)} items
